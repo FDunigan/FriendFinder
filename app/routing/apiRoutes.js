@@ -16,7 +16,7 @@ module.exports = function(app) {
 
     var matchName = '';
     var matchImage = '';
-    var difference = 10000;
+    var totalDifference = 10000;
 
     for (var i = 0; i < friendsData.length; i++) {
         var diff = 0;
@@ -24,8 +24,8 @@ module.exports = function(app) {
             diff += Math.abs(friendsData[i].scores[j] - friendResponse[j]);
         }
 
-        if (diff < difference) {
-            difference = diff;
+        if (diff < totalDifference) {
+            totalDifference = diff;
             matchName = friendsData[i].name;
             matchImage = friendsData[i].photo;
         }
