@@ -7,7 +7,9 @@ FriendFinder is deployed to Heroku. You can take the survey [here](https://salty
 ## Installation 
 Follow the instructions below to install:
 `git clone git@github.com:FDunigan/FriendFinder.git`
+
 `cd FriendFinder`
+
 `npm install`
 
 ## Technologies Used 
